@@ -1,10 +1,8 @@
 // ==UserScript==
 // @name         Reading Mode for Online Papers
-// @name:zh-CN   在线论文阅读模式
 // @namespace    https://github.com/LadderOperator/Reading-Mode-for-Online-Papers
 // @version      0.1
 // @description  Simplify websites of some journals for better reading experience
-// @description:zh-CN  简化一些期刊论文的网站页面以供更好的阅读体验
 // @author       LadderOperator
 // @include       *://science.sciencemag.org/content/*
 // @include       *://journals.aps.org/*/abstract/*
