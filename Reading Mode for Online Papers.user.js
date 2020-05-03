@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Reading Mode for Online Papers
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/LadderOperator/Reading-Mode-for-Online-Papers
 // @version      0.1
 // @description  Simplify websites of some journals for better reading experience
 // @author       LadderOperator
