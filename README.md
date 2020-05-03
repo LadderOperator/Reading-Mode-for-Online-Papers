@@ -1,7 +1,6 @@
 # Reading Mode for Online Papers
- Simplify websites of some journals for better reading experience
 
-> NOTE: This is a Tampormonkey script
+ Simplify websites of some journals for better reading experience
 
 ## Supported Journal List
 
