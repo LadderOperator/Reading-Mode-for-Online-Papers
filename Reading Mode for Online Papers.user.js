@@ -7,6 +7,7 @@
 // @include       *://science.sciencemag.org/content/*
 // @include       *://journals.aps.org/*/abstract/*
 // @include       *://www.nature.com/articles/*
+// @include       *://pubs.acs.org/doi/*
 // @grant        none
 // ==/UserScript==
 
@@ -32,6 +33,10 @@
            document.querySelector("#content > div > div > article > div.c-article-extras.u-hide-print").remove()
            document.querySelector("#content > div > div > article > div.c-article-main-column.u-float-left.js-main-column").setAttribute("style","width:100%;text-align:justify;margin-right:0;")
         break;
+      case "pubs.acs.org":
+         document.querySelector("#article_content-right").remove()
+         document.querySelector(".article_content-left .NLM_p").setAttribute("style","text-align:justify;")
+      break;
     }
 
 })();
