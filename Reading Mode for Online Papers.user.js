@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Reading Mode for Online Papers
 // @namespace    https://github.com/LadderOperator/Reading-Mode-for-Online-Papers
-// @version      0.1
+// @version      0.2
 // @description  Simplify websites of some journals for better reading experience
 // @author       LadderOperator
-// @include       *://science.sciencemag.org/content/*
+// @include       *://*.sciencemag.org/content/*
 // @include       *://journals.aps.org/*/abstract/*
 // @include       *://www.nature.com/articles/*
 // @include       *://pubs.acs.org/doi/*
@@ -15,8 +15,11 @@
    'use strict';
    var currentPage = window.location.host
 
+   if (currentPage.indexOf("sciencemag.org") > -1)
+      currentPage = "sciencemag.org"
+
    switch(currentPage) {
-    case "science.sciencemag.org":
+    case "sciencemag.org":
           document.querySelector(".tertiary").remove()
           document.querySelector(".secondary").remove()
           document.querySelector(".section.ref-list").setAttribute("style","text-align:left;")
@@ -30,8 +33,8 @@
 
        break;
     case "www.nature.com":
-          document.querySelector("#content > div > div > article > div.c-article-extras.u-hide-print").remove()
-          document.querySelector("#content > div > div > article > div.c-article-main-column.u-float-left.js-main-column").setAttribute("style","width:100%;text-align:justify;margin-right:0;")
+          document.querySelector("#content div.c-article-extras.u-hide-print").remove()
+          document.querySelector("#content div.c-article-main-column.u-float-left.js-main-column").setAttribute("style","width:100%;text-align:justify;margin-right:0;")
        break;
      case "pubs.acs.org":
           document.querySelector(".article_content-table").setAttribute("style","text-align:justify!important;")
