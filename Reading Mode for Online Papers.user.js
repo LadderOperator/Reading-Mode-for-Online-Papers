@@ -34,7 +34,7 @@
        break;
     case "www.nature.com":
           document.querySelector("#content div.c-article-extras.u-hide-print").remove()
-          document.querySelector("#content div.c-article-main-column.u-float-left.js-main-column").setAttribute("style","width:100%;text-align:justify;margin-right:0;")
+          document.querySelector("#content .c-article-main-column.u-float-left.js-main-column").setAttribute("style","width:100%;text-align:justify;margin-right:0;")
        break;
      case "pubs.acs.org":
           document.querySelector(".article_content-table").setAttribute("style","text-align:justify!important;")
